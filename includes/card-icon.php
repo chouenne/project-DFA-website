@@ -2,7 +2,14 @@
 if (!function_exists('render_cards')) {
   function render_cards($section_prefix, $card_count, $icon_data, $column_class = 'col-md-4')
   {
-    for ($i = 1; $i <= $card_count; $i++): ?>
+    $group_field = get_field($section_prefix . '_cards');
+    if (!is_array($group_field) || empty($group_field)) {
+      return;
+    }
+
+    $i = 1;
+    foreach ($group_field as $card):
+      ?>
       <div class="<?php echo esc_attr($column_class); ?> mb-4">
         <div class="card border-0">
           <div class="card-body">
@@ -26,15 +33,17 @@ if (!function_exists('render_cards')) {
             </div>
             <div class="iconcard-text">
               <h5 class="card-title mt-3">
-                <?php the_field($section_prefix . '_card_title_' . $i); ?>
+                <?php echo esc_html($card['card_title']); ?>
               </h5>
               <p class="card-text">
-                <?php the_field($section_prefix . '_card_description_' . $i); ?>
+                <?php echo esc_html($card['card_description']); ?>
               </p>
             </div>
           </div>
         </div>
       </div>
-    <?php endfor;
+      <?php
+      $i++;
+    endforeach;
   }
 }
