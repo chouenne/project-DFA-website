@@ -1,0 +1,6 @@
+@use "variables";
+
+.cta-banner {
+  background-color: variables.$secondary-color;
+  padding: 5vw 0;
+}

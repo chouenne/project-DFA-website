@@ -1,0 +1,22 @@
+@use "variables";
+
+footer {
+  padding: variables.$section-padding;
+  background-color: variables.$secondary-color;
+  h5 {
+    margin-bottom: 0.8rem;
+  }
+  .footer-nav {
+    a {
+      text-decoration: none;
+      color: variables.$text-color;
+
+      &:hover {
+        color: variables.$brand-color;
+      }
+    }
+  }
+  img {
+    width: 150px;
+  }
+}

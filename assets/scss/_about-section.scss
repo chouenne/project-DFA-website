@@ -1,0 +1,10 @@
+@use "variables";
+
+.about-section {
+  padding-top: 45rem;
+  padding-bottom: 6rem;
+  img {
+    box-shadow: variables.$card-shadow;
+    border-radius: variables.$custome-borderradius;
+  }
+}

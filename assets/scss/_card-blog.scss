@@ -1,0 +1,30 @@
+@use "variables";
+
+.blog-card {
+  position: relative;
+  border-radius: 8px; // Optional for better visuals
+  overflow: hidden; // Ensures the thumbnail doesn't overflow the card
+  background-color: #fff; // Ensure a consistent background color
+  min-height: 650px; // Define the height for the card
+  box-shadow: variables.$card-shadow;
+
+  .blog-card-thumbnail img {
+    height: 300px; // Thumbnail height
+    width: 100%; // Ensure the image spans the full width of the card
+    object-fit: cover; // Crop the image without distortion
+  }
+
+  .blog-card-content {
+    padding: 1rem; // Add padding for content inside the card
+
+    h5 {
+      margin-top: 0.5rem; // Your heading margin
+      font-size: 1.25rem; // Optional: Define font size for the heading
+    }
+
+    .btn-blogcard {
+      position: absolute;
+      bottom: 5%;
+    }
+  }
+}

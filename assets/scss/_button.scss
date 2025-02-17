@@ -1,0 +1,87 @@
+@use "variables";
+
+$btn-padding: 10px 20px;
+$minimize-btn-padding: 10px 0px;
+$btn-border-radius: 50px;
+$btn-margin-top: 1.5rem;
+$btn-font-size: 1rem;
+
+// -------------------------------------
+// Mixins for Reusability
+// -------------------------------------
+@mixin btn-base {
+  display: inline-block;
+  font-weight: 400;
+  font-size: $btn-font-size;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-radius: $btn-border-radius;
+  margin-top: 0.4rem;
+
+  &:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  // &:focus {
+  //   outline: none;
+  //   box-shadow: 0 0 0 0.2rem rgba(112, 119, 128, 0.5);
+  // }
+}
+
+.btn {
+  @include btn-base;
+
+  &.primary {
+    background-color: variables.$primary-color;
+    color: variables.$pure-white;
+    padding: $btn-padding;
+    border: 1px solid variables.$transparent-color;
+    text-align: center;
+    margin-top: $btn-margin-top;
+    text-transform: uppercase;
+  }
+
+  // navy underline button
+  &.secondary {
+    color: variables.$text-color;
+    padding-left: 0 !important;
+    text-align: left;
+    border: none;
+    width: 100%;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+  // orange underline button
+  &.third {
+    color: variables.$primary-color;
+    text-decoration: underline;
+    padding: $minimize-btn-padding;
+    text-align: left;
+  }
+  // white underline button
+  &.forth {
+    color: variables.$pure-white;
+    text-decoration: underline;
+    padding: $minimize-btn-padding;
+  }
+}
+
+// -------------------------------------
+// Utility Styles for Buttons (Optional)
+// -------------------------------------
+.btn-full-width {
+  width: 100%;
+}
+
+.btn-inline {
+  display: inline-block;
+  width: auto;
+}

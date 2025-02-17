@@ -1,0 +1,28 @@
+@use "variables";
+
+.section-paragraph {
+  width: 80%;
+}
+
+.contact-item {
+  gap: 1rem;
+}
+
+.contact-form {
+  position: relative;
+  padding: 50px;
+  box-shadow: variables.$card-shadow;
+  border-radius: variables.$custome-borderradius;
+
+  .input-holder input,
+  textarea {
+    padding: 4px;
+    width: 100%; // Ensures the container is full width
+  }
+
+  #submit-btn input {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+}

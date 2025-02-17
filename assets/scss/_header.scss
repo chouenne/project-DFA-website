@@ -1,0 +1,48 @@
+@use "variables" as vars;
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: vars.$transparent-color;
+
+  &.scrolled {
+    background-color: vars.$secondary-color;
+  }
+
+  .logo img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .navbar-toggler {
+    border: 0px;
+
+    .navbar-toggler-icon:hover {
+      color: vars.$primary-color;
+    }
+  }
+
+  .navbar-nav {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: vars.$text-color;
+
+      &:hover {
+        color: vars.$brand-color;
+      }
+    }
+
+    .nav-contact a {
+      margin-top: 0;
+      color: vars.$pure-white;
+    }
+  }
+}
