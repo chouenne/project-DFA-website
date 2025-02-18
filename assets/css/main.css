@@ -4,6 +4,10 @@ body {
   color: #2d3e54;
 }
 
+section {
+  padding: 12rem 0;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -180,16 +184,16 @@ button:hover {
   justify-content: center;
 }
 
-.service-section {
+#services {
   position: relative;
   z-index: 1;
 }
-.service-section .service-box {
+#services .service-box {
   position: absolute;
   width: 80%;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 80%);
+  transform: translate(-50%, 50%);
   right: 0;
   background-color: #ffffff;
   padding: 50px;
@@ -197,16 +201,16 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
-.service-section .service-box .card-grid {
+#services .service-box .card-grid {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.service-section .service-box .card-grid .card {
+#services .service-box .card-grid .card {
   background: rgba(0, 0, 0, 0);
   height: 200px;
 }
-.service-section .service-box .card-grid .card .card-body .icon-container {
+#services .service-box .card-grid .card .card-body .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,12 +220,12 @@ button:hover {
   background-color: #2d3e54;
   line-height: 50px;
 }
-.service-section .service-box .card-grid .card .card-body .icon-container .icon-class {
+#services .service-box .card-grid .card .card-body .icon-container .icon-class {
   color: #ffffff;
   font-size: 20px;
 }
-.service-section .service-box .card-grid .card .card-body .iconcard-text h5,
-.service-section .service-box .card-grid .card .card-body p {
+#services .service-box .card-grid .card .card-body .iconcard-text h5,
+#services .service-box .card-grid .card .card-body p {
   color: #2d3e54;
 }
 
@@ -235,7 +239,7 @@ button:hover {
 }
 
 .programs-section {
-  padding: 6rem 0;
+  padding: 12rem 0;
 }
 .programs-section .program-card {
   height: 50vh;
@@ -277,15 +281,18 @@ button:hover {
   padding: 5vw 0;
 }
 
-.whyus-section {
-  padding: 6rem 0;
+.whyus-section,
+.mission {
+  padding: 12rem 0;
 }
-.whyus-section .card-body {
+.whyus-section .card-body,
+.mission .card-body {
   display: flex;
   align-items: center;
   gap: 0.9vw;
 }
-.whyus-section .card-body .icon-container {
+.whyus-section .card-body .icon-container,
+.mission .card-body .icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,7 +303,7 @@ button:hover {
 }
 
 #faq {
-  padding: 6rem 0;
+  padding: 12rem 0;
 }
 #faq img {
   max-width: 80%;
@@ -350,7 +357,7 @@ button:hover {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #ffffff;
   min-height: 650px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -372,7 +379,7 @@ button:hover {
 }
 
 .blog-section {
-  padding: 6rem 0;
+  padding: 12rem 0;
 }
 .blog-section .blog-title .title-content-block {
   padding: 0 14rem;
@@ -404,21 +411,64 @@ button:hover {
   right: 50px;
 }
 
-footer {
-  padding: 6rem 0;
+.message {
+  background-color: rgba(239, 229, 221, 0.9294117647);
+  padding: 12rem 0;
+}
+.message img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+.message h5,
+.message h6 {
+  font-style: italic;
+  font-weight: 200;
+}
+.message .message-content {
+  position: relative;
+}
+.message .message-content i {
+  font-size: 8rem;
+  opacity: 50%;
+  position: absolute;
+}
+
+.philosophy {
+  padding: 12rem 0;
+}
+.philosophy .card {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  height: 25rem;
+  padding-top: 1rem;
+}
+.philosophy .card .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  line-height: 50px;
+}
+.philosophy .card .icon-container i {
+  font-size: 2rem;
+}
+
+.footer {
+  padding: 12rem 0;
   background-color: rgba(239, 229, 221, 0.9294117647);
 }
-footer h5 {
+.footer h5 {
   margin-bottom: 0.8rem;
 }
-footer .footer-nav a {
+.footer .footer-nav a {
   text-decoration: none;
   color: #2d3e54;
 }
-footer .footer-nav a:hover {
+.footer .footer-nav a:hover {
   color: #547788;
 }
-footer img {
+.footer img {
   width: 150px;
 }
 

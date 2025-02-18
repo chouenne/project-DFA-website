@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" style="margin-top:13rem;">
   <div class="container">
     <div class="row">
       <!-- Company Info -->

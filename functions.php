@@ -137,6 +137,50 @@ function custom_acf_add_hero_fields()
         ),
       ),
     ));
+    // CTA Section Field Group
+    acf_add_local_field_group(array(
+      'key' => 'group_cta_section',
+      'title' => 'CTA Section',
+      'fields' => array(
+        array(
+          'key' => 'field_cta_title',
+          'label' => 'CTA Title',
+          'name' => 'cta_title',
+          'type' => 'text',
+        ),
+        array(
+          'key' => 'field_cta_subtitle',
+          'label' => 'CTA Subtitle',
+          'name' => 'cta_subtitle',
+          'type' => 'text',
+        ),
+        array(
+          'key' => 'field_cta_btn',
+          'label' => 'CTA Button',
+          'name' => 'cta_btn',
+          'type' => 'link',
+        ),
+      ),
+      'location' => array(
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'front-page.php', // Apply to homepage
+          ),
+        ),
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-about-us.php', // Apply to about us page
+          ),
+        ),
+      ),
+    ));
   }
 }
 add_action('acf/init', 'custom_acf_add_hero_fields');
+
+
+

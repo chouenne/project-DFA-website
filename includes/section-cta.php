@@ -1,5 +1,5 @@
 <!-- CTA Banner Section -->
-<section class="cta-banner py-5">
+<section class="cta-banner">
   <div class="container text-center">
     <?php
     // Get ACF fields for section title, subtitle, and button

@@ -4,7 +4,7 @@
   position: relative;
   border-radius: 8px; // Optional for better visuals
   overflow: hidden; // Ensures the thumbnail doesn't overflow the card
-  background-color: #fff; // Ensure a consistent background color
+  background-color: variables.$pure-white; // Ensure a consistent background color
   min-height: 650px; // Define the height for the card
   box-shadow: variables.$card-shadow;
 

@@ -1,0 +1,23 @@
+@use "variables";
+.message {
+  background-color: variables.$secondary-color;
+  padding: variables.$section-padding;
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  h5,
+  h6 {
+    font-style: italic;
+    font-weight: 200;
+  }
+  .message-content {
+    position: relative;
+    i {
+      font-size: 8rem;
+      opacity: 50%;
+      position: absolute;
+    }
+  }
+}

@@ -15,6 +15,10 @@ if (have_posts()):
 
     // Import the hero section template
     get_template_part('includes/section', 'hero');
+    get_template_part('includes/section', 'mission');
+    get_template_part('includes/section', 'message');
+    get_template_part('includes/section', 'philosophy');
+    get_template_part('includes/section', 'cta');
 
   endwhile;
 endif;
