@@ -28,10 +28,10 @@
 
       // Define Font Awesome icons for services
       $service_icons = [
-        'fas fa-calendar-days',
-        'fas fa-clipboard',
-        'fas fa-pen-to-square',
-        'fas fa-envelope-open-text',
+        'fas fa-shapes',
+        'fas fa-award',
+        'fas fa-handshake',
+        'fas fa-rocket',
       ];
 
       // Render cards for the service section

@@ -56,7 +56,7 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: #2d3e54;
 }
 
@@ -76,6 +76,56 @@ button:hover {
   color: rgba(239, 229, 221, 0.9294117647);
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+}
 #header {
   position: fixed;
   top: 0;
@@ -108,7 +158,7 @@ button:hover {
   color: #2d3e54;
 }
 #header .navbar-nav a:hover {
-  color: #547788;
+  color: #d45308;
 }
 #header .navbar-nav .nav-contact a {
   margin-top: 0;
@@ -172,15 +222,31 @@ button:hover {
   width: auto;
 }
 
-.hero-section {
+.text-content {
+  justify-content: baseline;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically center the content */
 }
-.hero-section .home-hero {
+
+.text-inner {
+  max-width: 600px;
+  width: 60%;
+}
+
+.text-inner-left {
+  margin-right: auto; /* Push text to the left */
+}
+
+.text-inner-center {
+  margin: 0 auto; /* Center the text container */
+}
+
+.home-hero {
   justify-content: baseline;
 }
-.hero-section .about-hero {
+
+.about-hero {
   justify-content: center;
 }
 
@@ -278,7 +344,7 @@ button:hover {
 
 .cta-banner {
   background-color: rgba(239, 229, 221, 0.9294117647);
-  padding: 5vw 0;
+  padding: 8vw 0;
 }
 
 .whyus-section,

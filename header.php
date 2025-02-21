@@ -10,7 +10,7 @@
     rel="stylesheet">
   <!-- google icons -->
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=diversity_1,home,inbox_text,person_raised_hand,rate_review,volunteer_activism,workspace_premium" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=compost,diversity_1,diversity_3,emoji_objects,groups_2,home,inbox_text,people_alt,person_raised_hand,rate_review,volunteer_activism,workspace_premium" />
 
 
   <?php wp_head(); ?>

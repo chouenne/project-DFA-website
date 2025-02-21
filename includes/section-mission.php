@@ -27,10 +27,10 @@
 
         // Define Material Icons for the Why Us section
         $material_icons = [
-          'inbox_text',               // Icon 1
-          'rate_review',        // Icon 2
-          'diversity_1',        // Icon 3
-          'person_raised_hand', // Icon 4
+          'emoji_objects',               // Icon 1
+          'diversity_3',        // Icon 2
+          'people_alt',        // Icon 3
+          'compost', // Icon 4
         ];
 
         // Render the cards

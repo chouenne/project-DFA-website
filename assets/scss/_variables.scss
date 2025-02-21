@@ -19,6 +19,16 @@ $icon-size: 24px;
 //space
 $section-padding: 12rem 0;
 
+// Tablet padding
+@media (max-width: 1024px) {
+  $section-padding: 8rem 0;
+}
+
+// Mobile padding
+@media (max-width: 767px) {
+  $section-padding: 6rem 0;
+}
+
 $custome-borderradius: 10px;
 
 // Global styles for typography and colors
@@ -82,7 +92,7 @@ h6 {
 p {
   font-family: $primary-font;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   color: $text-color;
 }
 
@@ -100,4 +110,70 @@ button:hover {
   font-family: $primary-font;
   background-color: $btn-hover;
   color: $secondary-color;
+}
+
+// Tablet styles (768px - 1024px)
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; // Slightly smaller for tablet
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+
+// Mobile styles (up to 767px)
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem; // Even smaller for mobile
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
 }

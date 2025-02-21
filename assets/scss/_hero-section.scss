@@ -1,13 +1,27 @@
-.hero-section {
+.text-content {
+  justify-content: baseline;
   min-height: 100vh;
   display: flex;
-  align-items: center; // Vertically center the content
+  align-items: center; /* Vertically center the content */
+}
 
-  .home-hero {
-    justify-content: baseline;
-  }
+.text-inner {
+  max-width: 600px;
+  width: 60%;
+}
 
-  .about-hero {
-    justify-content: center;
-  }
+.text-inner-left {
+  margin-right: auto; /* Push text to the left */
+}
+
+.text-inner-center {
+  margin: 0 auto; /* Center the text container */
+}
+
+.home-hero {
+  justify-content: baseline;
+}
+
+.about-hero {
+  justify-content: center;
 }
