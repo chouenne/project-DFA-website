@@ -17,11 +17,8 @@ endif;
 ?>
 
 <section class="hero-section d-flex align-items-center<?php echo esc_attr($hero_class); ?>" style="
-    background-image: linear-gradient(
-      rgba(255, 220, 220, 0.5), 
-rgba(255, 230, 230, 0.6)  
-    ), url('<?php echo esc_url($hero_image); ?>');
-    background-blend-mode: hard-light;
+    background-color: rgba(239, 229, 221,0.8); background-image: url('<?php echo esc_url($hero_image); ?>'); 
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

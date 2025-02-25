@@ -44,5 +44,16 @@
       margin-top: 0;
       color: vars.$pure-white;
     }
+
+    .current-menu-item a,
+    .current-page-ancestor a {
+      color: vars.$primary-color;
+      font-weight: bold;
+    }
+
+    .nav-contact a {
+      margin-top: 0;
+      color: vars.$pure-white;
+    }
   }
 }

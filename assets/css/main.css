@@ -164,6 +164,15 @@ button:hover {
   margin-top: 0;
   color: #ffffff;
 }
+#header .navbar-nav .current-menu-item a,
+#header .navbar-nav .current-page-ancestor a {
+  color: #d45308;
+  font-weight: bold;
+}
+#header .navbar-nav .nav-contact a {
+  margin-top: 0;
+  color: #ffffff;
+}
 
 .btn {
   display: inline-block;
@@ -424,7 +433,7 @@ button:hover {
   border-radius: 8px;
   overflow: hidden;
   background-color: #ffffff;
-  min-height: 650px;
+  min-height: 700px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 .blog-card .blog-card-thumbnail img {
@@ -518,6 +527,31 @@ button:hover {
 }
 .philosophy .card .icon-container i {
   font-size: 2rem;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination .current {
+  background-color: #d45308;
+  color: #fff;
+  border-color: #d45308;
 }
 
 .footer {

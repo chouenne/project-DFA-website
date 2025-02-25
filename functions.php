@@ -135,6 +135,13 @@ function custom_acf_add_hero_fields()
             'value' => 'page-about-us.php',
           ),
         ),
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-all-blogs.php',
+          ),
+        ),
       ),
     ));
     // CTA Section Field Group
@@ -176,11 +183,17 @@ function custom_acf_add_hero_fields()
             'value' => 'page-about-us.php', // Apply to about us page
           ),
         ),
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-all-blogs.php', // Apply to all blogs page
+          ),
+        ),
       ),
     ));
   }
 }
 add_action('acf/init', 'custom_acf_add_hero_fields');
-
 
 

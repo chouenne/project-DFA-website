@@ -11,7 +11,7 @@ if (have_posts()):
     the_post();
 
     // Set the query variable for hero class before including the hero section template
-    set_query_var('hero_class', 'about-hero');
+    // set_query_var('hero_class', 'about-hero');
 
     // Import the hero section template
     get_template_part('includes/section', 'hero');
