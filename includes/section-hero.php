@@ -22,6 +22,7 @@ endif;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height:100vh;
   ">
   <div class="container">
     <div class="row">
