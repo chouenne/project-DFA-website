@@ -1,0 +1,36 @@
+.card-img {
+  height: 400px;
+  width: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  &.card-even {
+    .row {
+      flex-direction: row;
+    }
+  }
+
+  &.card-odd {
+    .row {
+      flex-direction: row-reverse;
+    }
+  }
+}

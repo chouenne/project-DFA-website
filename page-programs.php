@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Services
+Template Name: Programs
 */
 get_header();
 ?>
@@ -12,7 +12,7 @@ if (have_posts()):
     the_post();
 
     get_template_part('includes/section', 'hero');
-    get_template_part('includes/section', 'fullservices');
+    get_template_part('includes/section', 'fullprograms');
     get_template_part('includes/section', 'cta');
 
   endwhile;
