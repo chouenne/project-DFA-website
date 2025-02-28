@@ -16,7 +16,7 @@ if ($hero_button):
 endif;
 ?>
 
-<section class="hero-section d-flex align-items-center<?php echo esc_attr($hero_class); ?>" style="
+<section class="hero-section d-flex align-items-center <?php echo esc_attr($hero_class); ?>" style="
     background-color: rgba(239, 229, 221,0.8); background-image: url('<?php echo esc_url($hero_image); ?>'); 
     background-blend-mode: overlay;
     background-position: center;
