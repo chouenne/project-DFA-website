@@ -149,6 +149,13 @@ function custom_acf_add_hero_fields()
             'value' => 'page-services.php',
           ),
         ),
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-programs.php',
+          ),
+        ),
       ),
     ));
     // CTA Section Field Group
@@ -202,6 +209,13 @@ function custom_acf_add_hero_fields()
             'param' => 'page_template',
             'operator' => '==',
             'value' => 'page-services.php', // Apply to all blogs page
+          ),
+        ),
+        array(
+          array(
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-programs.php', // Apply to all blogs page
           ),
         ),
       ),

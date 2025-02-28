@@ -1,33 +1,42 @@
-<section class="fullprograms py-5">
-  <div class="container">
-    <div class="row">
-      <?php
+<?php
+/**
+ * Section Template - section-fullprograms.php
+ *
+ * This template is used to display the full programs section with cards.
+ *
+ * @package YourThemeName
+ */
 
-      $programs_cards = get_field('programs_page_cards');
+// Get the group field data
+$programs_page_cards = get_field('programs_page_cards');
 
-      if ($programs_cards):
-        $index = 0;
-        foreach ($programs_cards as $card): // Directly loop through repeater field items
-          $card_title = isset($card['card_title']) ? $card['card_title'] : '';
-          $card_description = isset($card['card_description']) ? $card['card_description'] : '';
-          $card_image = isset($card['card_image']) ? $card['card_image'] : '';
+// Check if the group field data is available
+if ($programs_page_cards && is_array($programs_page_cards)):
+  ?>
+  <section class="fullprograms-section">
+    <div class="container">
 
-          // Call card template
-          get_template_part('includes/card-img', null, array(
-            'card' => array(
-              'card_title' => $card_title,
-              'card_description' => $card_description,
-              'card_image' => $card_image,
-            ),
-            'index' => $index,
-            'layout' => '4-8',
-          ));
-          $index++; // Increment the index for next card
-        endforeach;
-      else:
-        echo '<p>No cards found.</p>';
-      endif;
-      ?>
+      <div class="row">
+        <?php
+        // Loop through each item in the group field
+        for ($i = 1; $i <= 6; $i++):
+          $item_key = 'item_' . $i;
+          if (isset($programs_page_cards[$item_key])):
+            // Include the card template and pass the item data
+            get_template_part('includes/card-img', null, array(
+              'card' => $programs_page_cards[$item_key],
+              'index' => $i - 1, // 0-based index
+              'section_type' => 'programs',
+            ));
+          endif;
+        endfor;
+        ?>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  <?php
+else:
+  // Fallback if no group field data is found
+  echo '<p>No programs cards found.</p>';
+endif;
+?>

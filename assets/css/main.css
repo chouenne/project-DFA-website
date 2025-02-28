@@ -555,31 +555,24 @@ button:hover {
 }
 
 .card-img {
-  height: 400px;
-  width: auto;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 2rem;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 10rem;
 }
-.card-img:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card-img .card-body {
+  padding: 1.5rem;
 }
-.card-img .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 0.75rem;
+.card-img .img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
 }
-.card-img .card-text {
-  font-size: 1rem;
-  color: #555;
-}
-.card-img.card-even .row {
-  flex-direction: row;
-}
-.card-img.card-odd .row {
-  flex-direction: row-reverse;
+
+.col-md-4 .img-fluid,
+.col-md-6 .img-fluid {
+  aspect-ratio: 1/1;
 }
 
 .footer {
