@@ -5,6 +5,13 @@
   border-radius: variables.$border-radius;
   margin-bottom: 10rem;
 
+  // Ensure images are square
+  .col-md-4,
+  .col-md-6 {
+    .img-fluid {
+      aspect-ratio: 1 / 1;
+    }
+  }
   .card-body {
     padding: 1.5rem;
   }
@@ -15,13 +22,5 @@
     object-fit: cover;
     box-shadow: variables.$card-shadow;
     border-radius: variables.$border-radius;
-  }
-}
-
-// Ensure images are square
-.col-md-4,
-.col-md-6 {
-  .img-fluid {
-    aspect-ratio: 1 / 1; // Ensure square images
   }
 }

@@ -559,6 +559,10 @@ button:hover {
   border-radius: 15px;
   margin-bottom: 10rem;
 }
+.card-img .col-md-4 .img-fluid,
+.card-img .col-md-6 .img-fluid {
+  aspect-ratio: 1/1;
+}
 .card-img .card-body {
   padding: 1.5rem;
 }
@@ -568,11 +572,6 @@ button:hover {
   object-fit: cover;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
-}
-
-.col-md-4 .img-fluid,
-.col-md-6 .img-fluid {
-  aspect-ratio: 1/1;
 }
 
 .footer {

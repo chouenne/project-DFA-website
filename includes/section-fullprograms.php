@@ -19,7 +19,7 @@ if ($programs_page_cards && is_array($programs_page_cards)):
       <div class="row">
         <?php
         // Loop through each item in the group field
-        for ($i = 1; $i <= 6; $i++):
+        for ($i = 1; $i <= 8; $i++):
           $item_key = 'item_' . $i;
           if (isset($programs_page_cards[$item_key])):
             // Include the card template and pass the item data
