@@ -353,7 +353,7 @@ button:hover {
 
 .cta-banner {
   background-color: rgba(239, 229, 221, 0.9294117647);
-  padding: 8vw 0;
+  padding: 10vh 20vw;
 }
 
 .whyus-section,
@@ -385,10 +385,11 @@ button:hover {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
-#faq .faq-item {
+
+.faq-item {
   cursor: pointer;
 }
-#faq .faq-item .toggle-btn {
+.faq-item .toggle-btn {
   padding: 0;
   border: none;
   background: none;
@@ -399,7 +400,7 @@ button:hover {
   justify-content: center;
   transition: all 0.3s ease;
 }
-#faq .faq-item .toggle-btn .toggle-icon {
+.faq-item .toggle-btn .toggle-icon {
   width: 100%;
   height: 100%;
   padding: 0.3rem;
@@ -410,21 +411,21 @@ button:hover {
   border-radius: 50%;
   transition: all 0.3s ease;
 }
-#faq .faq-item .toggle-btn .toggle-icon .icon-line {
+.faq-item .toggle-btn .toggle-icon .icon-line {
   stroke: #ffffff;
   transition: all 0.3s ease;
 }
-#faq .faq-item .toggle-btn .toggle-icon .vertical {
+.faq-item .toggle-btn .toggle-icon .vertical {
   opacity: 1;
 }
-#faq .faq-item .toggle-btn[aria-expanded=true] .toggle-icon {
+.faq-item .toggle-btn[aria-expanded=true] .toggle-icon {
   background-color: white;
   border: 1px solid #2d3e54;
 }
-#faq .faq-item .toggle-btn[aria-expanded=true] .toggle-icon .icon-line {
+.faq-item .toggle-btn[aria-expanded=true] .toggle-icon .icon-line {
   stroke: #2d3e54;
 }
-#faq .faq-item .toggle-btn[aria-expanded=true] .toggle-icon .vertical {
+.faq-item .toggle-btn[aria-expanded=true] .toggle-icon .vertical {
   opacity: 0;
 }
 

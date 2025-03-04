@@ -24,39 +24,13 @@
         <!-- FAQ Accordion -->
         <div id="faq-accordion">
           <?php
-          // Loop through the first 3 FAQ items
-          for ($i = 1; $i <= 3; $i++):
-            $faq_item = get_field("faq_lists")["item_$i"]; // Get the FAQ item
-            $question = $faq_item['question'] ?? '';
-            $answer = $faq_item['answer'] ?? '';
+          $homepage_faqs = get_field('faq_lists');
+          // Include the FAQ partial file
+          get_template_part('includes/faq-items');
 
-            // Only render if question and answer are not empty
-            if ($question && $answer):
-              ?>
-              <!-- FAQ Item -->
-              <div class="faq-item border-bottom py-3">
-                <div class="d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0"><?php echo esc_html($question); ?></h5>
-                  <button class="btn toggle-btn" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq<?php echo $i; ?>" aria-expanded="false" aria-controls="faq<?php echo $i; ?>">
-                    <span class="toggle-icon">
-                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Horizontal line (always visible) -->
-                        <path class="icon-line horizontal" d="M0 10h20" stroke="#ffffff" stroke-width="2"
-                          stroke-linecap="round" />
-                        <!-- Vertical line (hidden when expanded) -->
-                        <path class="icon-line vertical" d="M10 0v20" stroke="#ffffff" stroke-width="2"
-                          stroke-linecap="round" />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-                <div id="faq<?php echo $i; ?>" class="collapse" data-bs-parent="#faq-accordion">
-                  <p class="mt-3"><?php echo esc_html($answer); ?></p>
-                </div>
-              </div>
-            <?php endif; ?>
-          <?php endfor; ?>
+          // Call the function to render the first 3 FAQ items
+          render_faq_items(3, 'faq-accordion', '', $homepage_faqs);
+          ?>
         </div>
         <?php
         $section_button = get_field('faq_btn');
