@@ -1,0 +1,9 @@
+.search-form {
+  .form-control {
+    &:focus {
+      box-shadow: none !important; // Remove the blue box-shadow
+      outline: none; // Remove the default browser outline
+      border-bottom-color: #007bff; // Change to your desired focus color
+    }
+  }
+}

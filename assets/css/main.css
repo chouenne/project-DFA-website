@@ -565,6 +565,12 @@ button:hover {
   color: #d45308;
 }
 
+.search-form .form-control:focus {
+  box-shadow: none !important;
+  outline: none;
+  border-bottom-color: #007bff;
+}
+
 .card-img {
   border: none;
   border-radius: 15px;
