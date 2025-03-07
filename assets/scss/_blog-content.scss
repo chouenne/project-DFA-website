@@ -1,0 +1,15 @@
+@use "variables"; // Import variables file
+
+.blog-content {
+  padding-bottom: 0;
+  .sidebar-widget {
+    li {
+      a {
+        color: variables.$primary-color-dk;
+        &:hover {
+          color: variables.$primary-color;
+        }
+      }
+    }
+  }
+}

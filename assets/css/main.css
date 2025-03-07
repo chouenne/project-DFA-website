@@ -555,6 +555,16 @@ button:hover {
   border-color: #d45308;
 }
 
+.blog-content {
+  padding-bottom: 0;
+}
+.blog-content .sidebar-widget li a {
+  color: rgb(168, 70, 14);
+}
+.blog-content .sidebar-widget li a:hover {
+  color: #d45308;
+}
+
 .card-img {
   border: none;
   border-radius: 15px;
