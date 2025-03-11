@@ -52,7 +52,7 @@ get_header(); // Include the header
       // Query the latest 3 blog posts
       $args = array(
         'post_type' => 'post', // Default post type
-        'posts_per_page' => 6, // Show 3 posts
+        'posts_per_page' => 3, // Show 3 posts
         'orderby' => 'date', // Order by date
         'order' => 'DESC', // Show latest posts first
       );
