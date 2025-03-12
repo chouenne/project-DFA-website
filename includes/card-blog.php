@@ -22,6 +22,8 @@ $permalink = get_permalink();
   <div class="blog-card-content">
     <h5 class="blog-card-title"><?php echo esc_html($title); ?></h5>
     <p class="blog-card-excerpt"><?php echo esc_html($excerpt); ?></p>
-    <a href="<?php the_permalink(); ?>" class="btn secondary btn-blogcard">Read More</a>
+    <a href="<?php the_permalink(); ?>" class="btn secondary btn-blogcard">
+      <?php echo (pll_current_language() == 'zh') ? '阅读更多' : 'Read More'; ?>
+    </a>
   </div>
 </div>

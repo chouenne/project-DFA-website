@@ -5,8 +5,8 @@ $hero_subtitle = get_field('hero_subtitle');
 $hero_description = get_field('hero_description');
 $hero_button = get_field('hero_btn');
 $hero_image = get_field('hero_image');
-$alignment_class = is_page('home') ? 'text-left' : 'text-center';
-$inner_class = is_page('home') ? 'text-inner-left' : 'text-inner-center';
+$alignment_class = (is_front_page() || is_page('home-中文-中国')) ? 'text-left' : 'text-center';
+$inner_class = (is_front_page() || is_page('home-中文-中国')) ? 'text-inner-left' : 'text-inner-center';
 
 
 if ($hero_button):

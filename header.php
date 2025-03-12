@@ -46,10 +46,10 @@
               'link_class' => 'nav-link',
             ));
             ?>
-            <!-- Contact Us Button -->
+            <!-- Contact Us Button 
             <li class="nav-contact">
               <a href="/contact" class="btn primary">Contact Us</a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>

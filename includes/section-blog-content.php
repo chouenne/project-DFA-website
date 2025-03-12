@@ -40,7 +40,7 @@
         <aside class="sidebar">
           <!-- Author Information -->
           <div class="sidebar-widget mb-5">
-            <h4 class="widget-title">Author</h4>
+            <h4 class="widget-title"><?php echo (pll_current_language() == 'zh') ? '作者' : 'Author'; ?></h4>
             <div class="author-info">
               <?php echo get_avatar(get_the_author_meta('ID'), 64); ?>
               <p class="author-name"><?php the_author(); ?></p>
@@ -49,13 +49,15 @@
 
           <!-- Post Date -->
           <div class="sidebar-widget mb-5">
-            <h4 class="widget-title">Date</h4>
+            <h4 class="widget-title"><?php echo (pll_current_language() == 'zh') ? '发布日期' : 'Date'; ?></h4>
             <p class="post-date"><?php echo get_the_date(); ?></p>
           </div>
 
           <!-- Categories -->
           <div class="sidebar-widget mb-5">
-            <h4 class="widget-title">Categories</h4>
+            <h4 class="widget-title">
+              <?php echo (pll_current_language() == 'zh') ? '分类' : 'Categories'; ?>
+            </h4>
             <ul class="post-categories">
               <?php
               $categories = get_the_category();
@@ -68,7 +70,9 @@
 
           <!-- Tags -->
           <div class="sidebar-widget mb-5">
-            <h4 class="widget-title">Tags</h4>
+            <h4 class="widget-title">
+              <?php echo (pll_current_language() == 'zh') ? '标签' : 'Tags'; ?>
+            </h4>
             <ul class="post-tags">
               <?php
               $tags = get_the_tags();
@@ -77,7 +81,7 @@
                   echo '<li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
                 }
               } else {
-                echo '<li>No tags found.</li>';
+                echo '<li>' . (pll_current_language() == 'zh' ? '未找到标签' : 'No tags found.') . '</li>';
               }
               ?>
             </ul>
@@ -85,7 +89,7 @@
 
           <!-- Recommended Blog Posts -->
           <div class="sidebar-widget">
-            <h4 class="widget-title">Recommended Posts</h4>
+            <h4 class="widget-title"><?php echo (pll_current_language() == 'zh') ? '推荐阅读' : 'Recommended Posts'; ?></h4>
             <ul class="recommended-posts">
               <?php
               // Query to fetch recommended posts

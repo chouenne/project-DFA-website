@@ -1,6 +1,6 @@
 <section class="about-section">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
       <div class="col-md-6">
         <?php
         // Get ACF field values

@@ -32,7 +32,7 @@ if (!function_exists('render_cards')) {
 
             </div>
             <div class="iconcard-text">
-              <h5 class="card-title mt-3">
+              <h5 class="mt-3">
                 <?php echo esc_html($card['card_title']); ?>
               </h5>
               <p class="card-text">

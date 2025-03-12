@@ -16,13 +16,31 @@
     z-index: 2;
     box-shadow: variables.$card-shadow;
     border-radius: variables.$custome-borderradius;
+
+    @media (min-width: 992px) {
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+
+    @media (max-width: 991.98px) {
+      bottom: 20%;
+      transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 767.98px) {
+      bottom: 80%;
+      transform: translate(-50%, 90%);
+      width: 90%;
+      padding: 30px;
+    }
+
     .card-grid {
       display: flex;
       justify-content: center;
       align-items: center;
       .card {
         background: variables.$transparent-color;
-        height: 200px;
+        height: 250px;
 
         .card-body {
           .icon-container {

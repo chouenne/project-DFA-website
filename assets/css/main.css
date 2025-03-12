@@ -15,6 +15,16 @@ h1 {
   color: #2d3e54;
   margin-bottom: 1rem;
 }
+@media (max-width: 991.98px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -239,8 +249,8 @@ button:hover {
 }
 
 .text-inner {
-  max-width: 600px;
-  width: 60%;
+  max-width: 650px;
+  width: 70%;
 }
 
 .text-inner-left {
@@ -276,6 +286,26 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+@media (min-width: 992px) {
+  #services .service-box {
+    bottom: 0;
+    transform: translate(-50%, 50%);
+  }
+}
+@media (max-width: 991.98px) {
+  #services .service-box {
+    bottom: 20%;
+    transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 767.98px) {
+  #services .service-box {
+    bottom: 80%;
+    transform: translate(-50%, 90%);
+    width: 90%;
+    padding: 30px;
+  }
+}
 #services .service-box .card-grid {
   display: flex;
   justify-content: center;
@@ -283,7 +313,7 @@ button:hover {
 }
 #services .service-box .card-grid .card {
   background: rgba(0, 0, 0, 0);
-  height: 200px;
+  height: 250px;
 }
 #services .service-box .card-grid .card .card-body .icon-container {
   display: flex;
@@ -306,7 +336,16 @@ button:hover {
 
 .about-section {
   padding-top: 45rem;
-  padding-bottom: 6rem;
+}
+@media (max-width: 991.98px) {
+  .about-section {
+    padding-top: 70rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-section {
+    padding-top: 100rem;
+  }
 }
 .about-section img {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -460,6 +499,16 @@ button:hover {
 .blog-section .blog-title .title-content-block {
   padding: 0 14rem;
   text-align: center;
+}
+@media (max-width: 991.98px) {
+  .blog-section .blog-title .title-content-block {
+    padding: 0 6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog-section .blog-title .title-content-block {
+    padding: 0 1rem;
+  }
 }
 
 .section-paragraph {

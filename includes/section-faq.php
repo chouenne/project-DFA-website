@@ -15,7 +15,7 @@
         $section_subtitle = get_field('faq_subtitle');
         ?>
         <?php if ($section_subtitle): ?>
-          <h4 class="text-uppercase text-muted"><?php echo esc_html($section_subtitle); ?></h4>
+          <h4 class="text-uppercase"><?php echo esc_html($section_subtitle); ?></h4>
         <?php endif; ?>
         <?php if ($section_title): ?>
           <h2 class="mb-4"><?php echo esc_html($section_title); ?></h2>

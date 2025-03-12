@@ -52,8 +52,16 @@ h1 {
   font-size: 3rem;
   color: $text-color;
   margin-bottom: 1rem;
+
+  @media (max-width: 991.98px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 767.98px) {
+    font-size: 2rem;
+  }
 }
-// title for the section
+
 h2 {
   font-family: $primary-font;
   font-weight: bold;

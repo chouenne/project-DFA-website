@@ -1,4 +1,4 @@
-<section class="contact-section py-5">
+<section class="contact-section py-5" id="contact">
   <div class="container">
     <div class="row">
       <!-- Left Side -->
@@ -66,7 +66,13 @@
 
       <!-- Right Side: Contact Form -->
       <div class="contact-form col-md-6">
-        <?php echo do_shortcode('[contact-form-7 id="437f285" title="Contact Form"]'); ?>
+        <?php
+        if (pll_current_language() == 'zh') {
+          echo do_shortcode('[contact-form-7 id="aa83bff" title="中文联系表单"]');
+        } else {
+          echo do_shortcode('[contact-form-7 id="437f285" title="English Contact Form"]');
+        }
+        ?>
       </div>
     </div>
   </div>

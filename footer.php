@@ -4,13 +4,18 @@
       <!-- Company Info -->
       <div class="col-md-3 mb-3">
         <h5 class="footer-title">Design Future Academy</h5>
-        <p class="small">Empowering Dreams, Building Futures</p>
-        <a href="#learn-more" class="btn secondary">Learn Details</a>
+        <p class="small">
+          <?php echo (pll_current_language() == 'zh') ? '赋能梦想，构建未来' : 'Empowering Dreams, Building Futures'; ?>
+        </p>
+        <a href="<?php echo (pll_current_language() == 'zh') ? home_url('/zh/关于我们/') : home_url('/about-us/'); ?>"
+          class="btn secondary">
+          <?php echo (pll_current_language() == 'zh') ? '了解更多' : 'Learn Details'; ?>
+        </a>
       </div>
 
 
       <div class="col-md-3 mb-3">
-        <h5 class="footer-title">Quick Links</h5>
+        <h5 class="footer-title"><?php echo (pll_current_language() == 'zh') ? '快速链接' : 'Quick Links'; ?></h5>
         <ul class="list-unstyled footer-nav">
           <?php
           wp_nav_menu(array(
@@ -26,7 +31,7 @@
 
       <!-- Social Media Links -->
       <div class="col-md-3 mb-3">
-        <h5 class="footer-title">Contact Us</h5>
+        <h5 class="footer-title"><?php echo (pll_current_language() == 'zh') ? '联系我们' : 'Contact Us'; ?></h5>
         <div class="social-links">
           <div class="contact-item d-flex g-2">
             <i class="fas fa-envelope contact-icon"></i>

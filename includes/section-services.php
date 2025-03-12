@@ -20,7 +20,7 @@
         ];
 
         // Render cards for the service section
-        render_cards($section_prefix, count($service_icons), $service_icons, 'col-md-4');
+        render_cards($section_prefix, count($service_icons), $service_icons, 'col-md-4 col-sm-6');
         ?>
       </div>
       <div class="row">
