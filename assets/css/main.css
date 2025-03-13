@@ -15,16 +15,6 @@ h1 {
   color: #2d3e54;
   margin-bottom: 1rem;
 }
-@media (max-width: 991.98px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 767.98px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
 
 h2 {
   font-family: "Roboto", sans-serif;
@@ -113,26 +103,26 @@ button:hover {
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 2rem;
-  }
-  h2 {
     font-size: 1.5rem;
   }
+  h2 {
+    font-size: 1rem;
+  }
   h3 {
-    font-size: 1.1rem;
-    line-height: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   h6 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 1.3rem;
   }
 }
@@ -245,7 +235,7 @@ button:hover {
   justify-content: baseline;
   min-height: 100vh;
   display: flex;
-  align-items: center; /* Vertically center the content */
+  align-items: center;
 }
 
 .text-inner {
