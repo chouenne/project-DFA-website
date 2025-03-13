@@ -94,9 +94,10 @@ button:hover {
     font-size: 1.1rem;
   }
   h6 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  p {
+  p,
+  a {
     font-size: 0.9rem;
     line-height: 1.4rem;
   }
@@ -106,23 +107,24 @@ button:hover {
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   h3 {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
   }
   h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   h5 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   h6 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-  p {
-    font-size: 0.6rem;
+  p,
+  a {
+    font-size: 0.8rem;
     line-height: 1.3rem;
   }
 }
@@ -133,6 +135,7 @@ button:hover {
   width: 100%;
   z-index: 1030;
   background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
 }
 #header.scrolled {
   background-color: rgba(239, 229, 221, 0.9294117647);
@@ -147,6 +150,9 @@ button:hover {
 #header .navbar-toggler .navbar-toggler-icon:hover {
   color: #d45308;
 }
+#header .navbar-collapse.show {
+  background-color: rgba(239, 229, 221, 0.9294117647);
+}
 #header .navbar-nav {
   padding: 15px 0;
   display: flex;
@@ -160,18 +166,10 @@ button:hover {
 #header .navbar-nav a:hover {
   color: #d45308;
 }
-#header .navbar-nav .nav-contact a {
-  margin-top: 0;
-  color: #ffffff;
-}
 #header .navbar-nav .current-menu-item a,
 #header .navbar-nav .current-page-ancestor a {
   color: #d45308;
   font-weight: bold;
-}
-#header .navbar-nav .nav-contact a {
-  margin-top: 0;
-  color: #ffffff;
 }
 
 .btn {
@@ -233,7 +231,6 @@ button:hover {
 
 .text-content {
   justify-content: baseline;
-  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -276,16 +273,10 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
-@media (min-width: 992px) {
+@media (max-width: 1024px) {
   #services .service-box {
     bottom: 0;
     transform: translate(-50%, 50%);
-  }
-}
-@media (max-width: 991.98px) {
-  #services .service-box {
-    bottom: 20%;
-    transform: translate(-50%, 0);
   }
 }
 @media (max-width: 767.98px) {

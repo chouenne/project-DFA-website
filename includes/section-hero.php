@@ -22,7 +22,8 @@ endif;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height:100vh;
+    min-height:100vh;
+    padding-top:30vh;
   ">
   <div class="container">
     <div class="row">

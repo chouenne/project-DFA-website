@@ -7,6 +7,7 @@
   width: 100%;
   z-index: 1030;
   background-color: vars.$transparent-color;
+  transition: background-color 0.3s ease-in-out;
 
   &.scrolled {
     background-color: vars.$secondary-color;
@@ -25,6 +26,10 @@
     }
   }
 
+  .navbar-collapse.show {
+    background-color: vars.$secondary-color;
+  }
+
   .navbar-nav {
     padding: 15px 0;
     display: flex;
@@ -40,10 +45,10 @@
       }
     }
 
-    .nav-contact a {
-      margin-top: 0;
-      color: vars.$pure-white;
-    }
+    // .nav-contact a {
+    //   margin-top: 0;
+    //   color: vars.$pure-white;
+    // }
 
     .current-menu-item a,
     .current-page-ancestor a {
@@ -51,9 +56,9 @@
       font-weight: bold;
     }
 
-    .nav-contact a {
-      margin-top: 0;
-      color: vars.$pure-white;
-    }
+    // .nav-contact a {
+    //   margin-top: 0;
+    //   color: vars.$pure-white;
+    // }
   }
 }

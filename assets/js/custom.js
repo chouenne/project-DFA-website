@@ -1,11 +1,18 @@
-// scroll header js
 window.addEventListener('scroll', function () {
   const header = document.getElementById('header');
-  const scrollPosition = window.scrollY; // Get the current scroll position
+  const scrollPosition = window.scrollY;
 
-  if (scrollPosition > window.innerHeight * 0.2) { // Check if scrolled down 20vh
-    header.classList.add('scrolled'); // Add class for black background
+  if (scrollPosition > window.innerHeight * 0.2) {
+    header.classList.add('scrolled');
   } else {
-    header.classList.remove('scrolled'); // Remove class for transparent background
+    header.classList.remove('scrolled');
+  }
+});
+
+
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+  const header = document.getElementById('header');
+  if (!header.classList.contains('scrolled')) {
+    header.classList.add('scrolled');
   }
 });
