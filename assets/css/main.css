@@ -132,7 +132,7 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1030;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease-in-out;
@@ -146,9 +146,14 @@ button:hover {
 }
 #header .navbar-toggler {
   border: 0px;
+  padding: 0.5rem;
 }
 #header .navbar-toggler .navbar-toggler-icon:hover {
-  color: #d45308;
+  color: #e67e22;
+}
+#header .navbar-collapse {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 #header .navbar-collapse.show {
   background-color: rgba(239, 229, 221, 0.9294117647);
@@ -158,6 +163,9 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
 }
 #header .navbar-nav a {
   text-decoration: none;
@@ -637,6 +645,14 @@ button:hover {
 }
 .footer img {
   width: 150px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -54,19 +54,22 @@
 
         <form action="#" method="post" class="subscription-form">
           <div class="row g-2">
-            <!-- Email Input -->
+            <!-- Email Input
             <div class="col-12">
               <input type="email" class="form-control" placeholder="Your Email Address" required>
             </div>
-            <!-- Submit Button -->
+          
             <div class="col-12">
               <button type="submit" class="btn primary">Subscribe</button>
+            </div> -->
+            <!-- MailPoet Subscription Form -->
+            <div class="col-12">
+              <?php if (function_exists('do_shortcode')): ?>
+                <?php echo do_shortcode('[mailpoet_form id="1"]'); ?>
+              <?php endif; ?>
             </div>
           </div>
-          <!-- MailPoet Subscription Form -->
-          <?php if (function_exists('do_shortcode')): ?>
-            <?php echo do_shortcode('[mailpoet_form id="1"]'); ?>
-          <?php endif; ?>
+
       </div>
     </div>
     <div class="row mt-4">

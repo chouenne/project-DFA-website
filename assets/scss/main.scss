@@ -19,3 +19,11 @@
 @use "page-404";
 @use "./card-img";
 @use "footer";
+
+body.modal-open {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

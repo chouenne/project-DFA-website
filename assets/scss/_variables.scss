@@ -24,6 +24,15 @@ $section-padding: 12rem 0;
 
 $custome-borderradius: 10px;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  // Custom width for extra-large screens
+  xxl: 1400px // Custom width for extra-extra-large screens,,,
+);
+
 // Global styles for typography and colors
 body {
   font-family: $primary-font;
