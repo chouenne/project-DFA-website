@@ -4,7 +4,8 @@ body {
   color: #2d3e54;
 }
 
-section {
+section,
+footer {
   padding: 12rem 0;
 }
 
@@ -77,6 +78,10 @@ button:hover {
 }
 
 @media (max-width: 1024px) {
+  section,
+  footer {
+    padding: 10rem 0;
+  }
   h1 {
     font-size: 2.5rem;
   }
@@ -103,6 +108,10 @@ button:hover {
   }
 }
 @media (max-width: 767px) {
+  section,
+  footer {
+    padding: 8rem 0;
+  }
   h1 {
     font-size: 1.5rem;
   }
@@ -290,7 +299,7 @@ button:hover {
 @media (max-width: 767.98px) {
   #services .service-box {
     bottom: 80%;
-    transform: translate(-50%, 90%);
+    transform: translate(-50%, 93%);
     width: 90%;
     padding: 30px;
   }
@@ -341,9 +350,6 @@ button:hover {
   border-radius: 10px;
 }
 
-.programs-section {
-  padding: 12rem 0;
-}
 .programs-section .program-card {
   height: 50vh;
   background-size: cover;
@@ -384,10 +390,6 @@ button:hover {
   padding: 10vh 20vw;
 }
 
-.whyus-section,
-.mission {
-  padding: 12rem 0;
-}
 .whyus-section .card-body,
 .mission .card-body {
   display: flex;
@@ -405,9 +407,6 @@ button:hover {
   line-height: 50px;
 }
 
-#faq {
-  padding: 12rem 0;
-}
 #faq img {
   max-width: 80%;
   border-radius: 10px;
@@ -482,9 +481,6 @@ button:hover {
   bottom: 5%;
 }
 
-.blog-section {
-  padding: 12rem 0;
-}
 .blog-section .blog-title .title-content-block {
   padding: 0 14rem;
   text-align: center;
@@ -527,7 +523,6 @@ button:hover {
 
 .message {
   background-color: rgba(239, 229, 221, 0.9294117647);
-  padding: 12rem 0;
 }
 .message img {
   width: 8rem;
@@ -548,9 +543,6 @@ button:hover {
   position: absolute;
 }
 
-.philosophy {
-  padding: 12rem 0;
-}
 .philosophy .card {
   background-color: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -630,7 +622,6 @@ button:hover {
 }
 
 .footer {
-  padding: 12rem 0;
   background-color: rgba(239, 229, 221, 0.9294117647);
 }
 .footer h5 {
@@ -641,7 +632,7 @@ button:hover {
   color: #2d3e54;
 }
 .footer .footer-nav a:hover {
-  color: #547788;
+  color: #a43f04;
 }
 .footer img {
   width: 150px;

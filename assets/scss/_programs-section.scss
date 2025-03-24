@@ -1,8 +1,6 @@
 @use "variables";
 
 .programs-section {
-  padding: variables.$section-padding;
-
   .program-card {
     height: 50vh;
     background-size: cover;

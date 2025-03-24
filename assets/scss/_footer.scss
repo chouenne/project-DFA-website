@@ -1,7 +1,6 @@
 @use "variables";
 
 .footer {
-  padding: variables.$section-padding;
   background-color: variables.$secondary-color;
   h5 {
     margin-bottom: 0.8rem;
@@ -12,7 +11,7 @@
       color: variables.$text-color;
 
       &:hover {
-        color: variables.$brand-color;
+        color: variables.$btn-hover;
       }
     }
   }

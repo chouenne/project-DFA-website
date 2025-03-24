@@ -19,9 +19,6 @@ $border-radius: 15px;
 //iconsize
 $icon-size: 24px;
 
-//space
-$section-padding: 12rem 0;
-
 $custome-borderradius: 10px;
 
 $container-max-widths: (
@@ -30,7 +27,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1200px,
   // Custom width for extra-large screens
-  xxl: 1400px // Custom width for extra-extra-large screens,,,
+  xxl: 1400px // Custom width for extra-extra-large screens,,,,,,,,
 );
 
 // Global styles for typography and colors
@@ -40,8 +37,9 @@ body {
   color: $text-color;
 }
 
-section {
-  padding: $section-padding;
+section,
+footer {
+  padding: 12rem 0;
 }
 
 // title for the page
@@ -116,7 +114,11 @@ button:hover {
 
 // Tablet styles (768px - 1024px)
 @media (max-width: 1024px) {
-  $section-padding: 10rem 0;
+  section,
+  footer {
+    padding: 10rem 0;
+  }
+
   h1 {
     font-size: 2.5rem; // Slightly smaller for tablet
   }
@@ -151,7 +153,11 @@ button:hover {
 
 // Mobile styles (up to 767px)
 @media (max-width: 767px) {
-  $section-padding: 8rem 0;
+  section,
+  footer {
+    padding: 8rem 0;
+  }
+
   h1 {
     font-size: 1.5rem; // Even smaller for mobile
   }

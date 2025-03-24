@@ -15,7 +15,8 @@ $permalink = get_permalink();
 <div class="blog-card md-4">
   <?php if ($thumbnail_url): ?>
     <div class="blog-card-thumbnail">
-      <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($title); ?>" class="w-100 img-fluid">
+      <img src="<?php echo esc_url($thumbnail_url); ?>" alt="<?php echo esc_attr($title); ?>"
+        class="w-100 object-fit-cover img-fluid">
     </div>
   <?php endif; ?>
 

@@ -1,7 +1,6 @@
 @use "variables";
 .message {
   background-color: variables.$secondary-color;
-  padding: variables.$section-padding;
   img {
     width: 8rem;
     height: 8rem;
