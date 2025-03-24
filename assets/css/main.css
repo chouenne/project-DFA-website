@@ -465,8 +465,11 @@ button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 .blog-card .blog-card-thumbnail img {
-  height: 300px;
-  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/9; /* Adjust to your preferred ratio */
+}
+.blog-card .blog-card-image {
+  height: 100%;
   object-fit: cover;
 }
 .blog-card .blog-card-content {
