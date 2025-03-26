@@ -50,7 +50,9 @@
 
       <!-- Email Subscription -->
       <div class="col-md-3 mb-3">
-        <h5 class="footer-title">Subscribe to Our Newsletter</h5>
+        <h5 class="footer-title">
+          <?php echo (pll_current_language() == 'zh') ? '订阅我们的最新资讯' : 'Subscribe to Our Newsletter'; ?></h5>
+
 
         <form action="#" method="post" class="subscription-form">
           <div class="row g-2">
@@ -65,7 +67,10 @@
             <!-- MailPoet Subscription Form -->
             <div class="col-12">
               <?php if (function_exists('do_shortcode')): ?>
-                <?php echo do_shortcode('[mailpoet_form id="1"]'); ?>
+                <?php
+                $form_id = (pll_current_language() == 'zh') ? 2 : 1; // 中文ID=2，英文ID=1
+                echo do_shortcode("[mailpoet_form id='{$form_id}']");
+                ?>
               <?php endif; ?>
             </div>
           </div>
