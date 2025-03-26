@@ -27,7 +27,7 @@ $container-max-widths: (
   lg: 960px,
   xl: 1200px,
   // Custom width for extra-large screens
-  xxl: 1400px // Custom width for extra-extra-large screens,,,,,,,,
+  xxl: 1400px // Custom width for extra-extra-large screens,,,,,,,,,,,
 );
 
 // Global styles for typography and colors
@@ -89,7 +89,8 @@ h6 {
   color: $text-color;
 }
 
-p {
+p,
+li {
   font-family: $primary-font;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -145,7 +146,8 @@ button:hover {
   }
 
   p,
-  a {
+  a,
+  li {
     font-size: 0.9rem;
     line-height: 1.4rem;
   }
@@ -184,7 +186,8 @@ button:hover {
   }
 
   p,
-  a {
+  a,
+  li {
     font-size: 0.8rem;
     line-height: 1.3rem;
   }

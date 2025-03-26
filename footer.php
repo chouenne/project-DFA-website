@@ -51,7 +51,14 @@
       <!-- Email Subscription -->
       <div class="col-md-3 mb-3">
         <h5 class="footer-title">
-          <?php echo (pll_current_language() == 'zh') ? '订阅我们的最新资讯' : 'Subscribe to Our Newsletter'; ?></h5>
+          <?php
+          if (function_exists('pll_current_language')) {
+            echo (pll_current_language() == 'zh') ? '订阅我们的最新资讯' : 'Subscribe to Our Newsletter';
+          } else {
+            echo 'Subscribe to Our Newsletter'; // 默认回退英文
+          }
+          ?>
+        </h5>
 
 
         <form action="#" method="post" class="subscription-form">

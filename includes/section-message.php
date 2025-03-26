@@ -33,7 +33,7 @@
         <?php if ($message_content): ?>
           <?php echo wp_kses_post($message_content); ?>
         <?php endif; ?>
-        <i class="fa-solid fa-quote-right" style="bottom:-9rem;right:0;"></i>
+        <i class="fa-solid fa-quote-right"></i>
 
       </div>
     </div>
