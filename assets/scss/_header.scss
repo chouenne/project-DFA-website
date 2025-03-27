@@ -19,11 +19,59 @@
   }
 
   .navbar-toggler {
-    border: 0px;
+    border: 0;
     padding: 0.5rem;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    background-color: transparent; // Default state
+    transition: all 0.2s ease; // Smooth transition for hover effects
+    border-radius: 4px; // Optional rounded corners
 
-    .navbar-toggler-icon:hover {
-      color: #e67e22;
+    // Hover state for both normal and expanded states
+    &:hover {
+      background-color: rgba(230, 126, 34, 0.1);
+      color: vars.$btn-hover;
+    }
+
+    .navbar-toggler-icon {
+      background-image: none;
+      transition: opacity 0.2s ease;
+
+      &::before {
+        content: "☰";
+        font-size: 1.5rem;
+        line-height: 1;
+        display: block;
+        color: inherit;
+      }
+    }
+
+    &::after {
+      content: "✕";
+      position: absolute;
+      font-size: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      line-height: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: inherit;
+    }
+
+    &[aria-expanded="true"] {
+      .navbar-toggler-icon {
+        opacity: 0;
+      }
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 

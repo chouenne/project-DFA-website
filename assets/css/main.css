@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -157,11 +158,51 @@ button:hover {
   height: auto;
 }
 #header .navbar-toggler {
-  border: 0px;
+  border: 0;
   padding: 0.5rem;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  border-radius: 4px;
 }
-#header .navbar-toggler .navbar-toggler-icon:hover {
-  color: #e67e22;
+#header .navbar-toggler:hover {
+  background-color: rgba(230, 126, 34, 0.1);
+  color: #a43f04;
+}
+#header .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  transition: opacity 0.2s ease;
+}
+#header .navbar-toggler .navbar-toggler-icon::before {
+  content: "☰";
+  font-size: 1.5rem;
+  line-height: 1;
+  display: block;
+  color: inherit;
+}
+#header .navbar-toggler::after {
+  content: "✕";
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  line-height: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: inherit;
+}
+#header .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+  opacity: 0;
+}
+#header .navbar-toggler[aria-expanded=true]::after {
+  opacity: 1;
 }
 #header .navbar-collapse {
   max-width: 100vw;
