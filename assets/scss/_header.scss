@@ -31,7 +31,11 @@
     max-width: 100vw; // Constrain to viewport width
     overflow-x: hidden; // Hide horizontal overflow
     &.show {
+      margin-top: -1rem;
       background-color: vars.$secondary-color;
+      max-height: 70vh; /* Set a maximum height */
+      overflow-y: auto; /* Make it scrollable when content exceeds height */
+      overscroll-behavior: contain; /* Prevent scroll chaining */
     }
   }
 

@@ -168,7 +168,11 @@ button:hover {
   overflow-x: hidden;
 }
 #header .navbar-collapse.show {
+  margin-top: -1rem;
   background-color: rgba(239, 229, 221, 0.9294117647);
+  max-height: 70vh; /* Set a maximum height */
+  overflow-y: auto; /* Make it scrollable when content exceeds height */
+  overscroll-behavior: contain; /* Prevent scroll chaining */
 }
 #header .navbar-nav {
   padding: 15px 0;
