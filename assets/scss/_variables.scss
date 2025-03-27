@@ -27,14 +27,20 @@ $container-max-widths: (
   lg: 960px,
   xl: 1200px,
   // Custom width for extra-large screens
-  xxl: 1400px // Custom width for extra-extra-large screens,,,,,,,,,,,
+  xxl: 1400px // Custom width for extra-extra-large screens,,,,,,,,,,,,,,,,,,,,,,
 );
+
+html {
+  overflow-x: hidden;
+}
 
 // Global styles for typography and colors
 body {
   font-family: $primary-font;
   background-color: $pure-white;
   color: $text-color;
+  position: relative;
+  width: 100%;
 }
 
 section,
@@ -155,6 +161,14 @@ button:hover {
 
 // Mobile styles (up to 767px)
 @media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+  }
+
   section,
   footer {
     padding: 8rem 0;

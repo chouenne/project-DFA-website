@@ -1,8 +1,14 @@
 @charset "UTF-8";
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #2d3e54;
+  position: relative;
+  width: 100%;
 }
 
 section,
@@ -111,6 +117,12 @@ button:hover {
   }
 }
 @media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
   section,
   footer {
     padding: 8rem 0;
@@ -151,6 +163,7 @@ button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 #header.scrolled {
+  width: 100vw;
   background-color: rgba(239, 229, 221, 0.9294117647);
 }
 #header .logo img {
@@ -205,7 +218,7 @@ button:hover {
   opacity: 1;
 }
 #header .navbar-collapse {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 #header .navbar-collapse.show {
@@ -359,7 +372,8 @@ button:hover {
 }
 #services .service-box .card-grid .card {
   background: rgba(0, 0, 0, 0);
-  height: 250px;
+  height: 280px;
+  padding-bottom: 2.5rem;
 }
 #services .service-box .card-grid .card .card-body .icon-container {
   display: flex;
@@ -456,7 +470,7 @@ button:hover {
 }
 
 #faq img {
-  max-width: 80%;
+  margin-bottom: 1rem;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -698,6 +712,9 @@ button:hover {
 }
 .footer h5 {
   margin-bottom: 0.8rem;
+}
+.footer .footer-nav li {
+  margin-bottom: 0.3rem;
 }
 .footer .footer-nav a {
   text-decoration: none;

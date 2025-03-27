@@ -40,7 +40,8 @@
       align-items: center;
       .card {
         background: variables.$transparent-color;
-        height: 250px;
+        height: 280px;
+        padding-bottom: 2.5rem;
 
         .card-body {
           .icon-container {

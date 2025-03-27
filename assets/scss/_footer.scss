@@ -6,6 +6,9 @@
     margin-bottom: 0.8rem;
   }
   .footer-nav {
+    li {
+      margin-bottom: 0.3rem;
+    }
     a {
       text-decoration: none;
       color: variables.$text-color;
