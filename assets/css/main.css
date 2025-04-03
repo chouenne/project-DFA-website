@@ -707,6 +707,10 @@ button:hover {
   border-radius: 15px;
 }
 
+.cta-video {
+  background-color: rgba(239, 229, 221, 0.9294117647);
+}
+
 .footer {
   background-color: rgba(239, 229, 221, 0.9294117647);
 }

@@ -8,6 +8,7 @@ get_header();
 
 
 get_template_part('includes/section', 'blog-content');
+get_template_part('includes/section', 'iframe');
 
 
 ?>
